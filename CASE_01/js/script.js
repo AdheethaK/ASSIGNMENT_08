@@ -299,14 +299,20 @@ const myFunction_6 = () =>{
         margin: 'auto'
     });
 }
+var flag = true;
+$("#btn-stop").on('click',()=>{
+    flag = false;
+});
 $("#btn-start").on('click',()=>{
     var t = 800;
     for (var i = 0; i < 100; i++) {
-        setTimeout(myFunction_1,t);
-        setTimeout(myFunction_2,t+=800);
-        setTimeout(myFunction_3,t+=800);
-        setTimeout(myFunction_4,t+=800);
-        setTimeout(myFunction_5,t+=800);
-        setTimeout(myFunction_6,t+=800);
+        if (flag) {
+            setTimeout(myFunction_1,t);
+            setTimeout(myFunction_2,t+=800);
+            setTimeout(myFunction_3,t+=800);
+            setTimeout(myFunction_4,t+=800);
+            setTimeout(myFunction_5,t+=800);
+            setTimeout(myFunction_6,t+=800);
+        }
     }
 });
