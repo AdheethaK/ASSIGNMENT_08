@@ -62,4 +62,17 @@ const change_color_7 = () =>{
     $("#unit_7").addClass("change_color_1");
 }
 
-change_color_1();
+// ----------create the que-------------
+var t = 500;
+function que(){
+    setTimeout(change_color_1,t);
+    setTimeout(change_color_2,t+=100);
+    setTimeout(change_color_3,t+=100);
+    setTimeout(change_color_4,t+=100);
+    setTimeout(change_color_5,t+=100);
+    setTimeout(change_color_6,t+=100);
+    setTimeout(change_color_7,t+=100);
+}
+for (let i=0;i<10;i++){
+    que();
+}
