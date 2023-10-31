@@ -62,17 +62,33 @@ const change_color_7 = () =>{
     $("#unit_7").addClass("change_color_1");
 }
 
-// ----------create the que-------------
+// ----------start the que-------------
 var t = 500;
+let nIntervalId;
+function que_activate(){
+    //check if the interval is already used
+    if(!nIntervalId){
+        nIntervalId = setInterval(que,500)
+    }
+}
+
+//----------create the que-----------
+let timeoutId_1 ;
+let timeoutId_2 ;
+let timeoutId_3 ;
+let timeoutId_4 ;
+let timeoutId_5 ;
+let timeoutId_6 ;
+let timeoutId_7 ;
 function que(){
-    setTimeout(change_color_1,t);
-    setTimeout(change_color_2,t+=100);
-    setTimeout(change_color_3,t+=100);
-    setTimeout(change_color_4,t+=100);
-    setTimeout(change_color_5,t+=100);
-    setTimeout(change_color_6,t+=100);
-    setTimeout(change_color_7,t+=100);
+    timeoutId_1=setTimeout(change_color_1,t);
+    timeoutId_2=setTimeout(change_color_2,t+=50);
+    timeoutId_3=setTimeout(change_color_3,t+=50);
+    timeoutId_4=setTimeout(change_color_4,t+=50);
+    timeoutId_5=setTimeout(change_color_5,t+=50);
+    timeoutId_6=setTimeout(change_color_6,t+=50);
+    timeoutId_7=setTimeout(change_color_7,t+=50);
 }
-for (let i=0;i<10;i++){
-    que();
-}
+
+// -------------use setInterval-------------
+que_activate();
