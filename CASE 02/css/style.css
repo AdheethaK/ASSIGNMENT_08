@@ -37,6 +37,8 @@ body{
     margin-top: 5px;
 
     border-radius: 6px;
+
+    z-index: 9999;
 }
 .container>.unit:first-of-type{
     opacity: 0;
