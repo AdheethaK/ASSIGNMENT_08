@@ -82,12 +82,12 @@ let timeoutId_6 ;
 let timeoutId_7 ;
 function que(){
     timeoutId_1=setTimeout(change_color_1,t);
-    timeoutId_2=setTimeout(change_color_2,t+=50);
-    timeoutId_3=setTimeout(change_color_3,t+=50);
-    timeoutId_4=setTimeout(change_color_4,t+=50);
-    timeoutId_5=setTimeout(change_color_5,t+=50);
-    timeoutId_6=setTimeout(change_color_6,t+=50);
-    timeoutId_7=setTimeout(change_color_7,t+=50);
+    timeoutId_2=setTimeout(change_color_2,t+=100);
+    timeoutId_3=setTimeout(change_color_3,t+=100);
+    timeoutId_4=setTimeout(change_color_4,t+=100);
+    timeoutId_5=setTimeout(change_color_5,t+=100);
+    timeoutId_6=setTimeout(change_color_6,t+=100);
+    timeoutId_7=setTimeout(change_color_7,t+=100);
 }
 
 // -------------use setInterval-------------

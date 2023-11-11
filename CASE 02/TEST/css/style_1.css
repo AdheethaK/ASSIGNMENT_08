@@ -1,0 +1,18 @@
+body{
+    background-color: darkslategray;
+}
+.unit{
+    width: 100px;
+    height: 60px;
+    background-color: white;
+
+    display: inline-block;
+    margin: 1.8px;
+    margin-top: 5px;
+
+    border-radius: 6px;
+
+    z-index: 9999;
+}
+.change_color_1{background-color: lightblue;}
+.change_color_2{background-color: deeppink;}
